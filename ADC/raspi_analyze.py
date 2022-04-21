@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 import scipy.signal as signal
 
 plt.rcParams.update({'font.size': 20})
-tall = 1
 
 
 def raspi_import(path, channels=5):
@@ -59,6 +58,6 @@ plt.subplot(2, 1, 2)
 plt.title("Frekvensspektrum")
 plt.xlabel("Frekvens [Hz]")
 plt.ylabel("Energi [dB]")
-plt.plot(freq, 20*np.log10(np.abs(spectrum))) # get the power spectrum
+plt.plot(freq, 20*np.log10(np.abs(spectrum))) # Get the power spectrum
 
 plt.show()
